@@ -1,0 +1,70 @@
+$mobileBreakpoint: 576px;
+$tabletBreakpoint: 768px;
+$computerBreakpoint: 992px;
+$largeMonitorBreakpoint: 1200px;
+$widescreenMonitorBreakpoint: 1400px;
+
+.ui.container.default-layout-container {
+  @media only screen and (max-width: $mobileBreakpoint) {
+    .top-bar-container {
+      margin-top: 30px;
+    }
+    .content {
+      top: 160px;
+      position: relative;
+    }
+  }
+
+  @media only screen and (min-width: $mobileBreakpoint) and (max-width: $tabletBreakpoint) {
+    width: 540px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    .top-bar-container {
+      margin-top: 30px;
+    }
+    .content {
+      top: 160px;
+      position: relative;
+    }
+
+  }
+
+  @media only screen and (min-width: $tabletBreakpoint) and (max-width: $computerBreakpoint) {
+    width: 720px !important;
+    .content {
+      top: 100px;
+      position: relative;
+    }
+  }
+
+  @media only screen and (min-width: $computerBreakpoint) and (max-width: $largeMonitorBreakpoint) {
+    width: 960px !important;
+    .content {
+      top: 100px;
+      position: relative;
+    }
+  }
+
+  @media only screen and (min-width: $largeMonitorBreakpoint) and (max-width: $widescreenMonitorBreakpoint) {
+    width: 1140px !important;
+    .content {
+      top: 100px;
+      position: relative;
+    }
+  }
+
+  @media only screen and (min-width: $widescreenMonitorBreakpoint) {
+    width: 1320px !important;
+    .content {
+      top: 100px;
+      position: relative;
+    }
+  }
+}
+
+.default-layout-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+}

@@ -1,0 +1,18 @@
+.top-bar-container {
+  position: fixed;
+  height: 92px;
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  align-items: center;
+  z-index: 999;
+
+  &__menu {
+    width: 100%;
+    &__item {
+      &__image {
+        width: 25px;
+      }
+    }
+  }
+}
